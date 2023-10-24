@@ -217,3 +217,62 @@ const cars = [
 // };
 
 // console.table(getSortedCarsOnSale(cars));
+
+
+
+
+
+
+/**
+  |============================
+  | Codewars
+  |============================
+*/
+
+// Example №1
+// Create a method that takes an array / list as an input, and outputs the index at which the sole odd number is located.
+// This method should work with arrays with negative numbers.If there are no odd numbers in the array, then the method should output - 1.
+
+
+// function oddOne(arr) {
+//     return arr.findIndex(x => x % 2 != 0);
+// }
+
+// console.log(oddOne([2, 4, 6, 7, 10])) // => 3
+// console.log(oddOne([2, 16, 98, 10, 13, 78]))// => 4
+// console.log(oddOne([4, -8, 98, -12, -7, 90, 100]))// => 4
+// console.log(oddOne([2, 4, 6, 8])) // => -1
+
+
+// Example №2
+
+// You want to create secret messages which can be deciphered by the Decipher this! kata.Here are the conditions:
+
+// Your message is a string containing space separated words.
+// You need to encrypt each word in the message using the following rules:
+// The first letter must be converted to its ASCII code.
+// The second letter must be switched with the last letter
+// Keepin' it simple: There are no special characters in the input.
+
+// function encryptThis(text) {
+//     // Implement me! :)
+//     const words = text.split(" ");
+//     const encryption = words.map(word => {
+//         const firstLetter = word.charCodeAt(0);
+//         const secondLetter = word.length > 2 ? word[1] : "";
+//         const otherLetters = word.slice(2, -1);
+//         const lastLetter = word.length > 1 ? word[word.length - 1] : secondLetter;
+
+//         return `${firstLetter}${lastLetter}${otherLetters}${secondLetter}`
+//     })
+//     return encryption.join(" ");
+
+// }
+
+
+// console.log(encryptThis("A wise old owl lived in an oak"))
+// console.log(encryptThis("good"))
+// console.log(encryptThis("hello world"))
+
+// "65 119esi 111dl 111lw 108dvei 105n 97n 111ka"
+// "65 119esi 111dl 111lw 108dvei 105nn 97nn 111ka"
